@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets\style.css">
+    <script defer src="Assets\script.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous"
+  />
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <div class="jumbotron">
+        <header class="text-center">Get Current Weather</header>
+      </div>
+  
+      <div class="container">
+        <div class="row">
+          <section class="text-center text-primary">Enter City Name</section>
+          <span id='error'></span>
+        </div>
+        
+        <div class="row form-group form-inline" id='citySearch'>
+            <input type="text" name="city" id="city" class="form-control" placeholder="City Name">
+            <button id="submitWeather" class="btn btn-primary">Search City</button>
+        </div>
+        </div>
+  
+        <div id='results'></div>
+      </div>
+    </body>
+  </html>
+  
+</body>
+</html>
