@@ -9,40 +9,144 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
     <link rel="stylesheet" href="Assets\style.css" />
     <script defer src="Assets\script.js"></script>
     <title>Weather Dashboard</title>
   </head>
-  
+
   <body>
     <div class="app-wrap">
       <header>
-        <input type="text" autocomplete="off" class="search-box" placeholder="Enter City">
+        <input
+          type="text"
+          autocomplete="off"
+          class="search-box"
+          placeholder="Enter City"
+        />
       </header>
       <main>
+        <!-- current day -->
         <section class="location">
           <div class="city">City</div>
           <div class="date">Date</div>
+          <div class="current">
+            <div class="temp">Temp</div>
+            <div class="weather">Condition</div>
+            <div class="windSpeed">Wind Speed</div>
+            <div class="humidity">humidity</div>
         </section>
-        <div class="current">
-          <div class="temp">Temp</div>
-          <div class="weather">Condition</div>
-          <div class="windSpeed">Wind Speed</div>
-          <div class="humidity">humidity</div>
 
-        </div>
-        <div class="forecast">
-            <div class="day2"></div>
-            <div class="day3"></div>
-            <div class="day4"></div>
-            <div class="day5"></div>
+        <aside>
+              <!-- search history -->
+          <div class="history" class="container">
+            <ul class="list-group">
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Morbi leo risus</li>
+              <li class="list-group-item">Porta ac consectetur ac</li>
+              <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+          </div>
+        </aside>
+       <!-- Five Day Forecast-->
+        <div class="container">
+        <article>
+          <div class="row">
+            <div class="col-sm-12 col-md-3">
+              <div class="custom-column">
+                <div class="custom-column-header">Header</div>
+                <div class="custom-column-content">
+                  <ul class="list-group">
+                    <li class="list-group-item"><i class="tempF"></i> Temp</li>
+                    <li class="list-group-item"><i class="conditionF"></i> Condition</li>
+                    <li class="list-group-item"><i class="windSpeedF"></i> Wind Speed</li>
+                    <li class="list-group-item"><i class="humidityF"></i> Humidity</li>
+                    <li class="list-group-item"><i class="uvIndexF"></i> UV Index</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-3">
+              <div class="custom-column">
+                <div class="custom-column-header">Header</div>
+                <div class="custom-column-content">
+                  <ul class="list-group">
+                    <li class="list-group-item"><i class="tempF"></i> Temp</li>
+                    <li class="list-group-item"><i class="conditionF"></i> Condition</li>
+                    <li class="list-group-item"><i class="windSpeedF"></i> Wind Speed</li>
+                    <li class="list-group-item"><i class="humidityF"></i> Humidity</li>
+                    <li class="list-group-item"><i class="uvIndexF"></i> UV Index</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-3">
+              <div class="custom-column">
+                <div class="custom-column-header">Header</div>
+                <div class="custom-column-content">
+                  <ul class="list-group">
+                    <li class="list-group-item"><i class="tempF"></i> Temp</li>
+                    <li class="list-group-item"><i class="conditionF"></i> Condition</li>
+                    <li class="list-group-item"><i class="windSpeedF"></i> Wind Speed</li>
+                    <li class="list-group-item"><i class="humidityF"></i> Humidity</li>
+                    <li class="list-group-item"><i class="uvIndexF"></i> UV Index</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-3">
+              <div class="custom-column">
+                <div class="custom-column-header">Header</div>
+                <div class="custom-column-content">
+                  <ul class="list-group">
+                    <li class="list-group-item"><i class="tempF"></i> Temp</li>
+                    <li class="list-group-item"><i class="conditionF"></i> Condition</li>
+                    <li class="list-group-item"><i class="windSpeedF"></i> Wind Speed</li>
+                    <li class="list-group-item"><i class="humidityF"></i> Humidity</li>
+                    <li class="list-group-item"><i class="uvIndexF"></i> UV Index</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
         </div>
       </main>
-      <aside>
-          <div class="history"></div>
-      </aside>
     </div>
-
   </body>
 </html>
+
+
+
+
+        <!-- <div class="forecast">
+          <div class="card" class="col-md-3>
+            <div class="card-body">
+              This is some text within a card body.
+            </div>
+          <div class="card">
+            <div class="card-body">
+              This is some text within a card body.
+            </div>
+          <div class="card">
+            <div class="card-body">
+              This is some text within a card body.
+            </div>
+          <div class="card">
+            <div class="card-body">
+              This is some text within a card body.
+            </div>
+          </div>
+          <div class="day2"></div>
+          <div class="day3"></div>
+          <div class="day4"></div>
+          <div class="day5"></div>
+        </div> -->
